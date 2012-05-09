@@ -1,7 +1,7 @@
 <?php
 class Log extends LogAppModel {
 	var $name = 'Log';
-	var $order = 'Log.created DESC';
+	var $order = array('Log.created' => 'DESC');
 	var $findMethods = array('dashboard' => true);
 	
 	// we need to explicitly set this in order for the find methods to work
